@@ -1,0 +1,65 @@
+<ion-header translucent="true" class="ion-no-border">
+
+</ion-header>
+<ion-content fullscreen id="mapContent">
+  <div class="map-div" #gmap></div>
+  <div id="directionsPanel"></div>
+  <ion-card class="location-select">
+    <ion-item (click)="startSelecting()">
+      <ion-label slot="start">Start</ion-label>
+      <ion-input type="text" placeholder="Select Start Location" required [(ngModel)]="data.start.address"
+        (ionChange)="finishedSelecting()"></ion-input>
+    </ion-item>
+    <ion-item (click)="endSelecting()">
+      <ion-label slot="start">End</ion-label>
+      <ion-input type="text" placeholder="Select End Location" required [(ngModel)]="data.end.address"
+        (ionChange)="finishedSelecting()"></ion-input>
+    </ion-item>
+  </ion-card>
+</ion-content>
+
+<ion-menu side="end" #sidebar swipeGesture="false" contentId="mapContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Directions</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div id="panel"></div>
+  </ion-content>
+</ion-menu>
+
+
+<ion-footer>
+  <ion-card class="details">
+    <ion-card-header *ngIf="dirInfo">{{dirInfo.routes[0].legs[0].duration.text}}
+      ({{(dirInfo.routes[0].legs[0].distance.value / 1000) | number: '1.1-1' }} km)</ion-card-header>
+    <ion-card-header *ngIf="!dirInfo">Good Morning!</ion-card-header>
+    <ion-card-content>
+      <ion-item *ngIf="showTools">
+
+        <ion-button (click)="openMenu()" slot="start" class="steps-btn">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>View Steps</ion-label>
+        </ion-button>
+
+        <ion-buttons slot="end">
+          <ion-button (click)="calculateAndDisplayRoute('WALKING')" class="foot-btn" size="large"><ion-icon
+              name="footsteps"></ion-icon></ion-button>
+          <ion-button (click)="calculateAndDisplayRoute('DRIVING')" class="car-btn" size="large"><ion-icon
+              name="car"></ion-icon></ion-button>
+          <ion-button (click)="calculateAndDisplayRoute('TRANSIT')" class="bus-btn" size="large"><ion-icon
+              name="bus"></ion-icon></ion-button>
+        </ion-buttons>
+      </ion-item>
+
+      <ion-item *ngIf="!showTools">
+        <ion-button class="sub-btns">Favourites</ion-button>
+        <ion-button class="sub-btns">Latest</ion-button>
+        <ion-button class="sub-btns sos-btn">Emergency</ion-button>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+</ion-footer>

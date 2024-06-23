@@ -1,0 +1,178 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="light" fill="clear">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My Files</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="light" fill="clear">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+<div class="main-div">
+<ion-grid class="icons-grid">
+  <ion-row>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="image" color="success"></ion-icon>
+    </ion-button>
+      <h2>Images</h2>
+      <p>2000 items</p>
+ 
+    </ion-col>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="videocam" color="secondary"></ion-icon>
+      </ion-button>
+      <h2>Videos</h2>
+      <p>44 items</p>
+    </ion-col>
+    <ion-col>
+      <ion-icon name="document-text" color="warning"></ion-icon>
+      <h2>Docs</h2>
+      <p>400 items</p>
+    </ion-col>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="musical-notes" color="danger"></ion-icon>
+      </ion-button>
+      <h2>Music</h2>
+      <p>50 items</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="logo-android" color="success"></ion-icon>
+      </ion-button>
+      <h2>APKs</h2>
+      <p>8 items</p>
+    </ion-col>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="file-tray-stacked" color="primary"></ion-icon>
+      </ion-button>
+      <h2>ZIP</h2>
+      <p>200 items</p>
+    </ion-col>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="cloud" color="success"></ion-icon>
+      </ion-button>
+      <h2>Torrents</h2>
+      <p>12 items</p>
+    </ion-col>
+    <ion-col>
+      <ion-button fill="clear">
+      <ion-icon name="text"></ion-icon>
+      </ion-button>
+      <h2>TXT</h2>
+      <p>60 items</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-item class="title">
+  <ion-label slot="start">
+    My Folders
+  </ion-label>
+  <ion-button fill="clear"  slot="end">View all</ion-button>
+</ion-item>
+
+<ion-slides>
+  <ion-slide>
+    <ion-card>
+      <ion-item>
+        <ion-icon name="folder-open" color="primary" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Family</h2>
+          <p>25 items</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon name="folder-open" color="primary"  slot="start"></ion-icon>
+        <ion-label>
+          <h2>College</h2>
+          <p>44 items</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Family</h2>
+          <p>25 items</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Family</h2>
+          <p>25 items</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+  </ion-slide>
+</ion-slides>
+
+
+
+<ion-item class="title">
+  <ion-label slot="start">
+    Recent
+  </ion-label>
+  <ion-button fill="clear" slot="end">View all</ion-button>
+</ion-item>
+
+<ion-grid class="recent-grid">
+  <ion-row>
+    <ion-col>
+      <img src="./../../assets/movie1.jpg">
+      <ion-label>Movie1.jpg</ion-label>
+    </ion-col>
+    <ion-col>
+      <img src="./../../assets/movie2.jpg">
+      <ion-label>Movie3.jpg</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img src="./../../assets/movie3.jpg">
+      <ion-label>Movie3.jpg</ion-label>
+    </ion-col>
+    <ion-col>
+      <img src="./../../assets/movie4.png">
+      <ion-label>Movie4.jpg</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img src="./../../assets/movie1.jpg">
+      <ion-label>Movie1.jpg</ion-label>
+    </ion-col>
+    <ion-col>
+      <img src="./../../assets/movie2.jpg">
+      <ion-label>Movie3.jpg</ion-label>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</div>
+</ion-content>

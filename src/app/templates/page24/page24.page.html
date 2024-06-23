@@ -1,0 +1,114 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Support</ion-title>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="person"></ion-icon></ion-button>
+      <ion-button class="notify"><ion-icon name="notifications"></ion-icon> <ion-badge
+          color="danger">4</ion-badge></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="color-div"></div>
+  <ion-card class="search-card">
+    <ion-card-content>
+      <h2>Search Help Topics</h2>
+      <ion-searchbar></ion-searchbar>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="chip-div">
+    <ion-chip style="margin-right: 10px;">Account</ion-chip>
+    <ion-chip style="margin-right: 10px;">Orders</ion-chip>
+    <ion-chip style="margin-right: 10px;">Browsing</ion-chip>
+    <ion-chip style="margin-right: 10px;">Delivery</ion-chip>
+  </div>
+
+  <ion-grid class="contact">
+    <ion-row>
+      <ion-col>
+        <ion-card button>
+          <ion-card-content>
+            <img src="./../../assets/images/call-icon.png">
+            <ion-label>
+              <h2>Call Now</h2>
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card button>
+          <ion-card-content>
+            <img src="./../../assets/images/mail-icon.png">
+            <ion-label>
+              <h2>Mail</h2>
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card button (click)="openLink()">
+          <ion-card-content>
+            <img src="./../../assets/images/map-icon.png">
+            <ion-label>
+              <h2>Location</h2>
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<ion-title class="faq">Frequently Asked Questions</ion-title>
+  <ion-accordion-group [multiple]="true" [value]="['first', 'third']" class="accordianGroup">
+
+
+    <ion-accordion value="first" class="first">
+      <ion-item slot="header">
+        <ion-icon name="help" slot="start"></ion-icon>
+        <ion-label>
+          What is your company's mission?
+
+        </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>Our mission is to provide high-quality products and services that exceed our customers' expectations while maintaining a commitment to sustainability and ethical business practices.</p>
+      </div>
+    </ion-accordion>
+
+
+
+    <ion-accordion value="second" class="second">
+      <ion-item slot="header">
+        <ion-icon name="help" slot="start"></ion-icon>
+        <ion-label>
+          What types of products do you sell?
+
+        </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>We sell a wide range of products, including electronics, home goods, beauty products, and more. You can browse our full selection on our website.</p>
+      </div>
+    </ion-accordion>
+
+
+
+
+    <ion-accordion value="third">
+      <ion-item slot="header" class="third">
+        <ion-icon name="help" slot="start"></ion-icon>
+        <ion-label>
+          Do you offer free shipping?
+
+        </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>Yes, we offer free shipping on all orders over $50 within the United States.</p>
+      </div>
+    </ion-accordion>
+
+  </ion-accordion-group>
+</ion-content>

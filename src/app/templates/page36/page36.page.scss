@@ -1,0 +1,95 @@
+ion-content {
+    --background: url('./../../../assets/svgs/wave.svg');
+ --background-repeat: no-repeat;
+    --background-position: center center;
+   --background-size: cover;
+}
+
+ion-header{
+    ion-toolbar{
+        --background: transparent !important;
+            color: #fff;
+            ion-title{
+                font-family: 'Oxygen';
+                text-align: center;
+            }
+    }
+}
+
+.img-card {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+    font-family: 'Oxygen';
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.singer {
+    font-family: 'Oxygen';
+    text-align: center;
+    color: #fff;
+}
+
+.btn-set1 {
+    display: flex;
+    justify-content: center;
+    ion-icon{
+        color: #fff;
+    }
+}
+
+ion-progress-bar {
+    margin-top: 70px;
+    height: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    --background: #fff;
+    --progress-background: linear-gradient(to right, #7f00ff, #e100ff);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-set2 {
+    ion-row {
+        ion-col {
+            display: flex;
+            align-items: center;
+
+            .pause {
+                height: 100px;
+                width: 100px;
+                --border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                --background: linear-gradient(to right, #fc00ff, #00dbde);
+                --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                ion-icon{
+                    font-size: 50px;
+                }
+            }
+
+            .other {
+                height: 50px;
+                width: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                --border-radius: 50%;
+                        --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

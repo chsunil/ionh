@@ -1,0 +1,81 @@
+ion-item.selected {
+  --color: var(--ion-color-primary);
+}
+
+ion-split-pane {
+  --side-max-width: 20%
+}
+ion-header {
+  --background: transparent !important;
+
+  ion-toolbar {
+    --background: rgb(0 0 0 / 44%);
+    color: #fff;
+
+    ion-item {
+      --background: transparent !important;
+
+      ion-label {
+        font-family: 'Oxygen';
+        text-align: right;
+
+        h2 {
+          font-size: 25px;
+          font-family: 'Fira Sans';
+          color: white;
+        }
+
+      }
+    }
+  }
+}
+
+ion-content {
+  --background: url(./../assets/lottie/53851-cold-mountain-background.gif) 0 0/100% 100% no-repeat;
+}
+
+ion-list {
+  background: rgb(0 0 0 / 44%);
+  // border-bottom-right-radius: 10%;
+  // border-bottom-left-radius: 10%;
+
+  ion-item {
+    --background: transparent !important;
+    margin: 20px;
+
+    ion-icon {
+      color: #fff;
+    }
+
+    ion-label {
+      font-family: 'Oxygen';
+      color: #fff;
+      font-size: 25px;
+      padding-left: 10px;
+    }
+  }
+}
+
+ion-footer {
+  --background: transparent !important;
+
+  ion-item {
+    --background: transparent !important;
+
+    ion-button {
+      ion-label {
+        font-family: 'Oxygen';
+        padding-left: 10px;
+      }
+
+      ion-icon {
+        color: #fff;
+      }
+    }
+
+    ion-label {
+      font-family: 'Oxygen';
+      color: #fff;
+    }
+  }
+}

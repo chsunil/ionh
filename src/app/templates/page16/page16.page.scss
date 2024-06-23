@@ -1,0 +1,101 @@
+ion-header {
+    --background: transparent;
+    --border-width: 0;
+    ion-toolbar {
+      --background: transparent;
+      --color: #fff;
+
+    }
+  }
+
+  ion-content{
+    --margin-top:none;
+    --padding-top:none;
+  }
+
+  .main-div{
+    height: 25%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+  }
+
+  ion-grid{
+    margin-top: -180px;
+    color:#fff;
+    font-family: 'Oxygen';
+
+    .author{
+      margin-top: 10px;
+    }
+
+    ion-button{
+        width:50%;
+        --border-radius: 20px;
+        --background: linear-gradient(to right, #3494e6, #ec6ead);
+        ion-label{
+            padding-left: 5px;
+        }
+    }
+  }
+
+  .badge-div{
+    margin:20px;
+    ion-badge {
+        background-color: rgb(175, 11, 140);
+        --color: #fff;
+        --padding-top: 6px;
+        --padding-bottom: 6px;
+        --padding-start: 12px;
+        --padding-end: 12px;
+        --border-radius: 20px;
+      }
+  }
+  
+  .description{
+    font-family: 'Oxygen';
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  
+  ion-slides {
+    --height: 200px;
+    ion-slide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    img {
+      width: calc(25% - 10px);
+      border-radius: 20px;
+      
+    }
+  }
+  
+  ion-title {
+    font-weight: bold;
+    font-family: 'Oxygen';
+    color: #322b2b;
+  }
+
+  .your-rating{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  
+  ion-avatar {
+    margin-right: 10px;
+  }
+
+  ion-list{
+    ion-label{
+        font-family: 'Oxygen';
+        h2{
+            font-weight: bold;
+        }
+    }
+  }
+  

@@ -1,0 +1,94 @@
+ion-toolbar {
+    --background: linear-gradient(to right, #fe8c00, #f83600);
+    color: #fff;
+}
+
+.title {
+    font-size: 20px;
+    font-family: "Oxygen";
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img {
+    border-radius: 20px;
+
+}
+
+.funds {
+    ion-icon {
+        color: orange;
+    }
+
+    ion-label {
+        p {
+            font-family: 'Tilt Neon';
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Oxygen';
+        }
+    }
+}
+
+ion-progress-bar {
+    height: 20px;
+}
+
+ion-progress-bar::part(track) {
+    background: #cbc4e1;
+}
+
+ion-progress-bar::part(progress) {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+ion-progress-bar::part(stream) {
+    background-image: radial-gradient(ellipse at center, #e475f3 0%, #e475f3 30%, transparent 30%);
+}
+
+.org {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(20 113 201 / 27%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    ion-item {
+        --background: transparent;
+
+        ion-label {
+            padding-left: 20px;
+            font-family: 'Oxygen';
+
+            h2 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.desc {
+    margin: 10px;
+    font-family: 'Oxygen';
+    text-align: justify;
+}
+
+ion-footer {
+    text-align: center;
+
+    .footer-btn {
+        width: 90%;
+        font-family: 'Oxygen';
+        --border-radius: 20px;
+        --background: linear-gradient(to right, #fe8c00, #f83600);
+    }
+}

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="''" text=""></ion-back-button>
+      </ion-buttons>
+    <ion-title>Templates</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col class="col" *ngFor="let item of temps">
+      <img [src]="item.img">
+      <h2>Page {{item.id}}</h2>
+      <ion-button (click)="navigate(item.path)">View Page</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

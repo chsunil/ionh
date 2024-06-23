@@ -1,0 +1,70 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="wp/home" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="savePost()"><ion-icon name="bookmark"></ion-icon></ion-button>
+      <ion-button (click)="share()"><ion-icon name="share-social"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 *ngIf="post" class="title">{{post.title.rendered}}</h1>
+  <ion-item *ngIf="post" class="about">
+    <ion-badge class="date">{{post.date.slice(0, 10)}}</ion-badge>
+    <ion-badge class="author" *ngIf="author">{{author.name}}</ion-badge>
+  </ion-item>
+
+  <div *ngIf="post" class="img-div" [ngStyle]="{'background-image':'url('+post.jetpack_featured_media_url+')'}">
+
+  </div>
+
+  <div *ngIf="post" [innerHTML]="post.content.rendered" class="desc"></div>
+
+
+  <div *ngIf="comments" id="comment-section">
+
+
+
+
+    <ion-item class="toolbox">
+      <ion-title slot="start" class="comment-title">Comments({{comments.length}})</ion-title>
+      <ion-button class="comment-btn" (click)="writeComment()">
+        <ion-icon name="chatbox"></ion-icon>
+        <ion-label>Write Comment</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row *ngFor="let item of comments" class="comment">
+        <ion-col class="avatar-col">
+          <ion-avatar>
+            <img [src]="item.author_avatar_urls[48]">
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="content-col">
+          <div class="comment-content">
+            <h2>{{item.author_name}}</h2>
+            <div class="content" [innerHTML]="item.content.rendered"></div>
+            <ion-item>
+              <p slot="end" class="date">{{item.date.slice(0, 10)}}</p>
+              <ion-button slot="end" fill="clear" *ngIf="loggedUser && item.author == user.id"
+                (click)="deleteComment(item.id)">Delete</ion-button>
+            </ion-item>
+
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-infinite-scroll threshold="100px" *ngIf="hasMoreItems" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading Comments...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+  </div>
+
+</ion-content>

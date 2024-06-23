@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="search"></ion-icon></ion-button>
+      <ion-button><ion-icon name="notifications"></ion-icon></ion-button>
+      <ion-button class="new-ad">New Ad</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Cheap Laptops Used"></ion-searchbar>
+
+  <div class="chip-bar">
+    <ion-chip>Macbook</ion-chip>
+    <ion-chip>Dell Laptops</ion-chip>
+    <ion-chip>HP Laptops</ion-chip>
+    <ion-chip>Chargers</ion-chip>
+  </div>
+
+  <ion-item class="tools">
+    <ion-label slot="start">
+      <h3>144 ads found!</h3>
+    </ion-label>
+    <ion-select aria-label="sort-ads" interface="popover" placeholder="Sort Ads">
+      <ion-select-option value="apples">Low Price First</ion-select-option>
+      <ion-select-option value="oranges">High Price</ion-select-option>
+      <ion-select-option value="bananas">New Ads</ion-select-option>
+    </ion-select>
+    <ion-button slot="end"><ion-icon name="options"></ion-icon></ion-button>
+  </ion-item>
+
+  <ion-card class="ad" *ngFor="let item of ads">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" class="img-col">
+
+          <img src="{{item.img}}">
+
+        </ion-col>
+        <ion-col size="9">
+
+          <h2 color="primary" lines="2" class="title">{{titleRemodel(item.name)}}...</h2>
+          <p color="medium" lines="2" class="description">{{descriptionRemodel(item.desc)}}...</p>
+
+          <ion-item>
+            <h2 class="price" slot="start">${{item.price}}</h2>
+            <p class="date">{{item.date}}</p>
+            <ion-button fill="clear" slot="end">
+              <ion-icon name="heart" color="danger"></ion-icon>
+            </ion-button>
+
+          </ion-item>
+
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,86 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button size="large"><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-searchbar></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button size="large"><ion-icon name="options"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card class="saved">
+       <ion-card-content>
+        <div>
+          <ion-icon name="heart"></ion-icon>
+          <p class="icon-title">Saved</p>
+        </div>
+       </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="playlists">
+       <ion-card-content>
+        <div>
+          <ion-icon name="list-circle"></ion-icon>
+          <p class="icon-title">Playlists</p>
+        </div>
+       </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="youtube">
+       <ion-card-content>
+        <div>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <p class="icon-title">YouTube</p>
+        </div>
+       </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+<ion-item class="toolbox">
+  <ion-buttons slot="start"><ion-button><ion-icon name="play"></ion-icon> <ion-label class="play-label">Shuffle play</ion-label></ion-button></ion-buttons>
+ 
+  <ion-buttons slot="end">
+    <ion-button><ion-icon name="settings"></ion-icon></ion-button>
+    <ion-button><ion-icon name="funnel"></ion-icon></ion-button>
+  </ion-buttons>
+</ion-item>
+
+<ion-list>
+  <ion-item class="song" *ngFor="let item of songs"  [class.selected]="item === selectedSong" 
+  (click)="selectSong(item)">
+    <ion-thumbnail slot="start"><img src="./../../assets/images/music.png"></ion-thumbnail>
+    <ion-label>
+      <p class="title">{{item.name}}</p>
+      <p class="artist">{{item.artist}}</p>
+    </ion-label>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="share-social"></ion-icon></ion-button>
+      <ion-button><ion-icon name="heart"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-item>
+</ion-list>
+</ion-content>
+<ion-footer>
+  <ion-item>
+    <ion-icon name="musical-notes" slot="start"></ion-icon>
+    <ion-label>
+      <p class="title">{{currentSong.name}}</p>
+      <p class="artist">{{currentSong.artist}}</p>
+    </ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="play()" *ngIf="paused"><ion-icon name="play"></ion-icon></ion-button>
+      <ion-button (click)="pause()" *ngIf="!paused"><ion-icon name="pause"></ion-icon></ion-button>
+      <ion-button><ion-icon name="play-skip-forward"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-item>
+</ion-footer>

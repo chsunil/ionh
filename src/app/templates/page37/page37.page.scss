@@ -1,0 +1,60 @@
+ion-header {
+    ion-toolbar {
+        --background: #1cc1ba;
+        color: #fff;
+
+        ion-searchbar {
+            --border-radius: 20px;
+            font-family: 'Oxygen';
+        }
+    }
+}
+
+.cats {
+    text-align: center;
+    font-family: 'Oxygen';
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    ion-chip {
+        background-color: #00000085;
+        color: #fff;
+    }
+}
+
+.product {
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    ion-grid {
+        ion-row {
+            ion-col {
+                h2 {
+                    font-family: 'Oxygen';
+                    font-weight: bold;
+                }
+
+                p {
+                    font-family: 'Oxygen';
+                    font-size: 12px;
+                }
+
+                ion-item {
+                    margin-left: -20px;
+
+                    .price {
+                        font-family: 'Oxygen';
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+
+                    ion-button {
+                        --background: #0aa4ad;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

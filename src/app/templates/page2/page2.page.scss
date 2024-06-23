@@ -1,0 +1,78 @@
+.main-card{
+    border-radius: 20px;
+    background-color: green;
+    text-align: center;
+    font-family: 'Oxygen';
+
+    ion-avatar{
+        text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 90px;
+    margin-bottom: -20px;
+    }
+    h2{
+        color: #fff;
+    }
+
+    p{
+        color: #fff;
+    }
+    .card-title{
+      color:#fff;
+      font-weight: bold;
+    }
+
+    .card-subtitle{
+        color:#fff
+    }
+
+    .mid-col{
+        border-right-style: ridge;
+        border-left-style: ridge;
+        border-color: #c4c7c4;
+    }
+}
+
+.badge-div{
+   text-align: center;
+   margin-top: 20px;
+    ion-badge{
+        margin-left: 10px;
+        margin-right: 5px;
+        font-size: 12px;
+        font-family: "Oxygen";
+        border-radius: 10px;
+        width: 20%;
+            box-shadow: 0 2px 2px rgb(0 0 0 / 40%);
+    }
+}
+
+
+ion-title{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Oxygen';
+    font-weight: bold;
+    color: green;
+}
+
+.projects{
+    font-family: 'Oxygen';
+    ion-avatar{
+        width: 100px;
+        height: 100px;
+    }
+
+    ion-label{
+        margin-left: 20px;
+    font-family: 'Oxygen';
+
+    .title{
+        font-weight: bold;
+    height: 25px;
+    font-size: 18px;
+    }
+    }
+}

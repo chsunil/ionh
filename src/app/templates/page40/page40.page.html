@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button size="large"><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>My Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-grid>
+    <ion-row *ngFor="let item of products; let i=index" class="product">
+      <ion-col class="img-col">
+        <div class="img-container" [ngStyle]="{'background-image':'url('+item.img+')'}">
+         
+        </div>
+      </ion-col>
+      <ion-col class="label-col">
+        <h2>{{item.name}}</h2>
+        <p>${{item.price}}</p>
+      </ion-col>
+      <ion-col class="tool-col">
+        <p>x{{item.qty}}</p>
+        <ion-button class="bin" (click)="removeItem(i)">
+          <ion-icon name="trash-bin"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-card class="btn-card"  [class.selected]="pickup" button (click)="selectPickup()">
+          <ion-card-content>
+            <div class="card-div">
+                  <ion-icon src="./../../assets/svgs/pickup.svg"></ion-icon>
+            <ion-label>Pickup</ion-label>
+            </div>
+        
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col >
+        <ion-card class="btn-card" [class.selected]="deliver" button (click)="selectDelivery()">
+          <ion-card-content>
+            <div class="card-div">
+                  <ion-icon src="./../../assets/svgs/deliver.svg"></ion-icon>
+            <ion-label>Deliver</ion-label>
+            </div>
+        
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col class="total">
+        <p>Total</p>
+        <h2>${{total}}</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-button>Proceed to Checkout</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

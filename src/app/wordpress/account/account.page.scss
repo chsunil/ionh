@@ -1,0 +1,64 @@
+ion-header {
+    ion-toolbar {
+        --background: linear-gradient(to left, #56ccf2, #2f80ed);
+        color: #fff;
+
+        ion-title {
+            font-family: 'Oxygen';
+        }
+
+        ion-item {
+            --background: transparent;
+            ion-label {
+                font-family: 'Oxygen';
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+
+
+ion-list {
+
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    ion-item {
+
+        margin: 20px;
+
+
+
+        ion-label {
+            font-family: 'Oxygen';
+
+            padding-left: 10px;
+        }
+    }
+}
+
+ion-footer {
+    --background: transparent !important;
+
+    ion-item {
+        --background: transparent !important;
+
+        ion-button {
+            ion-label {
+                font-family: 'Oxygen';
+                padding-left: 10px;
+            }
+
+            ion-icon {
+                color: #fff;
+            }
+        }
+
+        ion-label {
+            font-family: 'Oxygen';
+            color: #fff;
+        }
+    }
+}

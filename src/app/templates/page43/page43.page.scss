@@ -1,0 +1,70 @@
+ion-content {
+    --background: linear-gradient(to bottom, #3f51b5, #2196f3);
+  }
+  
+  .forgot-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .lock-icon-container {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .forgot-password-label-container {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Oxygen';
+  }
+  
+  .forgot-password-form-container {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 1rem;
+    ion-item{
+        --border-radius: 25px;
+        margin-bottom: 30px;
+        ion-label{
+            font-family: 'Oxygen';
+        }
+
+        ion-input{
+            font-family: 'Oxygen';
+        }
+    }
+
+  }
+  
+  .submit-button-container {
+    margin-top: 1rem;
+    ion-button{
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+        --border-radius: 20px;
+        --box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .forgot-password-message-container {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Oxygen';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  

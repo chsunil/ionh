@@ -1,0 +1,63 @@
+<ion-split-pane contentId="main-content">
+  <ion-menu contentId="main-content">
+    <ion-header class="ion-no-border" translucent="true">
+      <ion-toolbar *ngIf="loggedUser">
+        <ion-buttons slot="start">
+          <ion-label slot="end">
+            <h2>{{user.name}}</h2>
+          </ion-label>
+        </ion-buttons>
+        <ion-item slot="end">
+          <ion-avatar slot="end">
+            <!-- <img src="./../../assets/images/person.jpg"> -->
+            <img [src]="user.yoast_head_json.og_image[0].url" alt="user.name">
+          </ion-avatar>
+        </ion-item>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-item button routerLink="/wp/home">
+          <ion-icon slot="start" name="document-text"></ion-icon>
+          <ion-label>Posts</ion-label>
+        </ion-item>
+        <ion-item routerLink="/wp/pages">
+          <ion-icon slot="start" name="document"></ion-icon>
+          <ion-label>Pages</ion-label>
+        </ion-item>
+        <ion-item routerLink="/wp/account">
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-label>Account</ion-label>
+        </ion-item>
+        <ion-item routerLink="/contact">
+          <ion-icon slot="start" name="mail"></ion-icon>
+          <ion-label>Contact</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/wp/login">
+          <ion-icon slot="start" name="log-in"></ion-icon>
+          <ion-label>Login</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/wp/search">
+          <ion-icon slot="start" name="search"></ion-icon>
+          <ion-label>Search</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/wp/saved">
+          <ion-icon slot="start" name="heart"></ion-icon>
+          <ion-label>Saved</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/wp/account">
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-label>Account</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content">
+
+
+  </ion-router-outlet>
+</ion-split-pane>

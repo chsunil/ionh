@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar slot="start"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="filter"></ion-icon></ion-button>
+      <ion-button><ion-icon name="cart"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cats">
+    <ion-chip *ngFor="let item of categories">{{item}}</ion-chip>
+  </div>
+
+
+  <div *ngFor="let item of products" class="product">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img [src]="item.img">
+        </ion-col>
+
+        <ion-col>
+          <h2>{{item.name}}</h2>
+          <div>
+            <p>{{item.description}}</p>
+          </div>
+          <ion-item>
+            <ion-label slot="start" class="price">${{item.price}}</ion-label>
+            <ion-button><ion-icon name="cart"></ion-icon><ion-label>Add</ion-label></ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

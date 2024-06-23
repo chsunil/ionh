@@ -1,0 +1,51 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="viewSearch()"><ion-icon name="search"></ion-icon></ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-slides loop="true" [options]="slideOpts1" class="featured-slide">
+    <ion-slide *ngFor="let item of featured">
+      <div class="parent-div" [ngStyle]="{'background-image':'url('+item.jetpack_featured_media_url+')'}">
+        <div class="caption" (click)="viewPost(item.id)">
+          <h2>{{item.title.rendered}}</h2>
+          <p [innerHTML]="sliceExcerpt(item.excerpt.rendered, 50)"></p>
+        </div>
+      </div>
+
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides [options]="catSlider" class="cats-slide">
+    <ion-slide *ngFor="let item of categories">
+      <ion-chip (click)="viewCat(item.id,item.name)">{{item.name}}</ion-chip>
+    </ion-slide>
+  </ion-slides>
+  <div></div>
+
+  <ion-grid>
+    <ion-row *ngFor="let item of posts" class="post" (click)="viewPost(item.id)">
+      <ion-col size="3" class="img-col">
+        <img src="{{item.jetpack_featured_media_url}}">
+      </ion-col>
+      <ion-col size="9">
+        <h2>{{item.title.rendered}}</h2>
+        <p [innerHTML]="sliceExcerpt(item.excerpt.rendered, 50)"></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-infinite-scroll threshold="100px" *ngIf="hasMoreItems" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading More Posts...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

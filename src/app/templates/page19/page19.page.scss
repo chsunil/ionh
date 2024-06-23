@@ -1,0 +1,72 @@
+ion-toolbar{
+    --background:#ffc409;
+    ion-title{
+        font-family: 'Oxygen';
+        color:rgb(0, 0, 0)
+    }
+
+    ion-icon{
+        color:rgb(0, 0, 0);
+    }
+}
+
+.banner-div{
+    background-color: #444;  
+.slide-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+}
+}
+
+.title{
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    --background:#ffc409;
+    ion-label{
+        text-align: center;
+        font-family: 'Oxygen';
+        color:rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 20px;
+    }
+   
+}
+
+.badge-div{
+    margin:20px;
+    text-align: center;
+    ion-badge {
+        background-color: rgb(45 52 84);
+        --color: #fff;
+        --padding-top: 6px;
+        --padding-bottom: 6px;
+        --padding-start: 12px;
+        --padding-end: 12px;
+        --border-radius: 20px;
+      }
+  }
+
+  .description{
+    font-family: 'Oxygen';
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  ion-card{
+    ion-item{
+        ion-label{
+            font-family: 'Oxygen';
+        }
+    }
+  }
+
+  ion-footer{
+    ion-button{
+       ion-icon{
+        color:black;
+       }
+    }
+  }

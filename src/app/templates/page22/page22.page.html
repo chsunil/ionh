@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="menu"></ion-icon></ion-button>
+   </ion-buttons>
+    <ion-title>Pizza Bar</ion-title>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="search"></ion-icon></ion-button>
+      <ion-button class="cart"><ion-icon name="cart" ></ion-icon>   <ion-badge color="warning" >2</ion-badge></ion-button>
+   </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-title class="type">Most Selling</ion-title>
+  <div class="line"></div>
+
+  <ion-slides [options]="slideOpts" >
+    <ion-slide *ngFor="let item of mostSelling">
+      <ion-card>
+        <img [src]="item.image" alt="product image">
+        <ion-label>
+          <h2>{{item.name}}</h2>
+        
+        </ion-label>
+        <ion-item>
+          <ion-label slot="start">
+            <h3>${{item.price}}</h3>
+          </ion-label>
+          <ion-button color="danger" slot="end"><ion-icon name="add"></ion-icon></ion-button>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-title class="type">Special Offers</ion-title>
+  <div class="line"></div>
+
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let item of offers">
+      <ion-card>
+        <img [src]="item.image" alt="product image">
+        <ion-label>
+          <h2>{{item.name}}</h2>
+        
+        </ion-label>
+    
+          <ion-label >
+           <span class="price">${{item.offer}}</span><span class="special-price"><del>${{item.price}}</del></span>
+          </ion-label>
+          <ion-button color="danger" expand="full"><ion-icon name="add"></ion-icon></ion-button>
+      </ion-card>
+    </ion-slide>
+
+
+  </ion-slides>
+
+  <ion-title class="type">Featured</ion-title>
+  <div class="line"></div>
+
+  <ion-slides [options]="slideOpts" >
+    <ion-slide *ngFor="let item of featured">
+      <ion-card>
+        <img [src]="item.image" alt="product image">
+        <ion-label>
+          <h2>{{item.name}}</h2>
+        
+        </ion-label>
+        <ion-item>
+          <ion-label slot="start">
+            <h3>${{item.price}}</h3>
+          </ion-label>
+          <ion-button color="danger" slot="end"><ion-icon name="add"></ion-icon></ion-button>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

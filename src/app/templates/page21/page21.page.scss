@@ -1,0 +1,36 @@
+ion-content {
+    --background: url(./../../../assets/images/electrician.jpg)0 0/cover no-repeat;
+}
+
+.main-div{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 40%;
+    color: white;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+    border-top-right-radius: 50px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+
+    h1{
+        font-size: 45px;
+    padding-left: 10px;
+    font-family: 'Fira Sans';
+    }
+
+    p{
+        font-family: 'Oxygen';
+        padding-left: 10px;
+    }
+
+    ion-button{
+        padding-left: 10px;
+    --border-radius: 15px;
+    --background: linear-gradient(to right, #f12711, #f5af19);
+
+    ion-label{
+        font-family: 'Oxygen';
+        padding-left: 5px;
+    }
+    }
+}

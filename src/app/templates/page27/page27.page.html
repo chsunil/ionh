@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="menu" style="font-size: 20px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Filter</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="close" style="font-size: 20px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div class="main-div">
+    <ion-list-header>
+      <ion-label>Category</ion-label>
+    </ion-list-header>
+    <ion-select aria-label="sort-ads" interface="popover" placeholder="Sort Ads" [(ngModel)]="select">
+      <ion-select-option value="new">Brand New</ion-select-option>
+      <ion-select-option value="used">Used</ion-select-option>
+    </ion-select>
+    <ion-list-header>
+      <ion-label>Price</ion-label>
+    </ion-list-header>
+    <ion-item lines="none" class="range">
+      <ion-range [pin]="true" dualKnobs="true" value="150" min="0" max="1000" name="price" [(ngModel)]="price">
+        <ion-label slot="start">0</ion-label>
+        <ion-label slot="end">1000</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Brand</ion-label>
+    </ion-list-header>
+    <ion-list class="att-list">
+      <ion-item lines="none" class="atts">
+        <ion-checkbox [(ngModel)]="checkboxValues.dell"> </ion-checkbox>
+        <ion-label>Dell</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="atts">
+        <ion-checkbox [(ngModel)]="checkboxValues.lenovo"> </ion-checkbox>
+        <ion-label>Lenovo</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="atts">
+        <ion-checkbox [(ngModel)]="checkboxValues.acer"> </ion-checkbox>
+        <ion-label>Acer</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-button color="danger" (click)="apply()"><ion-label>Apply</ion-label></ion-button>
+</ion-footer>

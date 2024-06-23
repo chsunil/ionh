@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button  ></ion-back-button>
+   </ion-buttons>
+    <ion-title >My Shop</ion-title>
+    <ion-buttons slot="end" >
+      <ion-icon name="share" style="margin-right: 8px;font-size: 23px"></ion-icon>
+   </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div class="banner-div" >
+    <ion-slides  loop="true" pager="true" [options]="slideOpts">
+            <ion-slide *ngFor="let image of images"> 
+                <img class="slide-img " src="{{image.src}}"  >
+            </ion-slide>
+    </ion-slides>
+  </div>
+  
+  <ion-item class="title" >
+    <ion-label>Chocolate Home</ion-label>
+  </ion-item>
+  <p class="description" style="margin-top: 10px;">This is a sample paragraph about the book's plot.Attract readers with a book cover that cannot be overlooked. Choose from 5940+ book cover templates, customize and make your book stand.</p>
+  <div class="badge-div">
+    <ion-badge style="margin-right: 10px;">Mystery</ion-badge>
+    <ion-badge style="margin-right: 10px;">Thriller</ion-badge>
+    <ion-badge style="margin-right: 10px;">Suspense</ion-badge>
+    <ion-badge>Horror</ion-badge>
+  </div>
+
+<ion-card>
+  <ion-item >
+    <ion-icon name="locate" slot="start" color="primary"></ion-icon>
+    <ion-label>No.04, Main Street, London, UK</ion-label>
+   </ion-item>
+  
+   <ion-item>
+    <ion-icon name="person" slot="start" color="danger"></ion-icon>
+    <ion-label>Chocolate Home PVT LTD</ion-label>
+   </ion-item>
+
+ <ion-item href="tel:{{971000000}}">
+  <ion-icon name="call" slot="start" color="warning"></ion-icon>
+  <ion-label>07000000</ion-label>
+ </ion-item>
+ 
+ <ion-item   href="{{9471000000}}">
+  <ion-icon name="logo-whatsapp" slot="start" color="success"></ion-icon>
+  <ion-label>Whatsapp Chat</ion-label>
+ </ion-item>
+
+ <ion-item>
+  <ion-icon name="at" slot="start" color="secondary"></ion-icon>
+  <ion-label>info@chocolatehome.uk</ion-label>
+ </ion-item>
+
+</ion-card>
+
+
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col>
+        <ion-button  href="tel:{{94710000000}}"  fill="solid"  expand="full" color="success">
+          <ion-icon slot="start" name="logo-whatsapp"></ion-icon>
+        </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button  expand="full" fill="solid" color="secondary">
+        <ion-icon slot="start" name="pin"></ion-icon>
+
+      </ion-button>
+    
+    </ion-col>
+    <ion-col>
+      <ion-button  href="tel:{{94710000000}}"  fill="solid"  expand="full" color="warning">
+        <ion-icon slot="start" name="call"></ion-icon>
+      </ion-button>
+  </ion-col>
+  </ion-row>
+</ion-footer>

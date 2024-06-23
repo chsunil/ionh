@@ -1,0 +1,33 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button size="large"><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="large"><ion-icon name="person"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row class="card" *ngFor="let item of foods">
+
+    <ion-col class="label-col" [ngStyle]="{'background-image':'url('+item.img+')'}">
+      <div class="label-div">
+        <h2>{{item.name}}</h2>
+        <p>{{item.sub}}</p>
+      </div>
+  
+    </ion-col>
+    <ion-col class="price-col">
+      <h2>${{item.price}}</h2>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+</ion-content>

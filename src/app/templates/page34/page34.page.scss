@@ -1,0 +1,103 @@
+ion-header {
+    --background: transparent;
+    ion-toolbar {
+        --background: transparent;
+
+        ion-buttons {
+            ion-button {
+                --background: transparent;
+                --border-radius: 0;
+
+                ion-icon {
+                    --color: #000;
+                }
+            }
+        }
+
+        .trending{
+            display: flex;
+            height: 40px;
+            align-items: center;
+            background-color: black;
+            color: white;
+            width: 50%;
+            border-bottom-left-radius: 40px;
+            border-top-left-radius: 40px;
+            text-align: center;
+
+            ion-label{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Oxygen';
+            }
+        }
+    }
+}
+
+.img-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    /* Set the height of the container */
+
+    .imgs-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-img {
+        height: 90%;
+        object-fit: cover;
+    }
+}
+
+
+
+h2 {
+    font-family: 'Oxygen';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+p {
+    font-family: 'Tilt Neon';
+    margin: 10px;
+    text-align: justify;
+}
+
+      ion-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: 'Oxygen';
+      }
+
+.sold{
+    font-family: 'Oxygen';
+}
+
+
+ion-footer {
+    ion-item{
+        --background: rgb(0, 0, 0);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+
+        ion-label{
+            font-size: 1.3rem;
+            font-family: 'Tilt Neon';
+            color: white;
+        }
+
+        ion-button{
+            color: white; 
+            
+        }
+    }
+}

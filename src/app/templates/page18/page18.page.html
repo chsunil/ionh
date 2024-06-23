@@ -1,0 +1,143 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Coffee Shop</ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content fullscreen>
+
+  <div class="above-div">
+    <h1>
+      Good Morning!
+    </h1>
+    <h1>
+      It's time for a Sip
+    </h1>
+  </div>
+
+  <ion-searchbar></ion-searchbar>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="top">
+        <ion-tab-button tab="home">
+          <ion-label>
+            Hot Coffee
+          </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="home">
+          <ion-label>
+            Cool Coffee
+          </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="home">
+          <ion-label>
+            Iced Coffee
+          </ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+
+
+  <ion-slides [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="./../../assets/images/americano.jpeg" alt="product image">
+        <ion-label>
+          <h2>Americano</h2>
+          <h3>$2.50</h3>
+        </ion-label>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="./../../assets/images/Mocha-1fc71f7.png" alt="product image">
+        <ion-label>
+          <h2>Mocha</h2>
+          <h3>$4.50</h3>
+        </ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="./../../assets/images/Latte-Macchiato-720x540.jpg" alt="product image">
+        <ion-label>
+          <h2>Latte</h2>
+          <h3>$1.50</h3>
+        </ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="./../../assets/images/Mocha-1fc71f7.png" alt="product image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Mocha</h2>
+        <p>Espresso with chocolate and steamed milk</p>
+        <h3>$4.50</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="./../../assets/images/espresso.jpg" alt="product image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Espresso</h2>
+        <p>Pure espresso shot</p>
+        <h3>$2.00</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="./../../assets/images/Latte-Macchiato-720x540.jpg" alt="product image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Macchiato</h2>
+        <p>Espresso with a dollop of foam</p>
+        <h3>$3.00</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" class="bottom-tabs">
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>
+          Home
+        </ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <ion-icon name="cart"></ion-icon>
+        <ion-label>
+          Cart
+        </ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <ion-icon name="heart"></ion-icon>
+        <ion-label>
+          Wishlist
+        </ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>
+          Account
+        </ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

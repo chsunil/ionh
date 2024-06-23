@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Seasonal Offers</ion-title>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="notifications"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-searchbar class="ion-no-border"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of hotels">
+    <div class="image-container">
+      <img src="{{item.img}}">
+      <div class="item-overlay">
+        <ion-chip>Sea View</ion-chip>
+        <ion-chip>2 Rooms</ion-chip>
+        <ion-chip>Kitchen</ion-chip>
+        <ion-chip>2 Bathrooms</ion-chip>
+      </div>
+      <ion-label class="price">
+        <h2>${{item.price}}</h2>
+      </ion-label>
+    </div>
+
+    <ion-item>
+      <ion-label class="details">
+        <h2>{{item.name}}</h2>
+        <p>{{item.type}}</p>
+      </ion-label>
+      <app-star-rating slot="end" [rating]="item.rating"></app-star-rating>
+    </ion-item>
+    <ion-row class="icons-row">
+      <ion-col>
+        <ion-icon src="./../../assets/images/wifi.svg"></ion-icon>
+        <ion-label>WiFi</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="./../../assets/images/car.svg" name="heart"></ion-icon>
+        <ion-label>Parking</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="./../../assets/images/restaurant.svg" name="heart"></ion-icon>
+        <ion-label>Dining</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

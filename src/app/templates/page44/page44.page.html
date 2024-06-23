@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="logo"><img src="./../../assets/images/travelLogo.png"></div>
+  <div class="signup-form">
+    <h1 class="signup-title">Signup</h1>
+    <p class="signup-message">Do you already have an account? <a href="#">Sign in</a></p>
+    <ion-list class="form">
+      <ion-item>
+        <ion-input type="text" placeholder="Name" required [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" placeholder="Email" required [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" required [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Confirm Password" required [(ngModel)]="confirmPassword"></ion-input>
+      </ion-item>
+      <ion-item>
+        <p class="terms">I agree to the terms and conditions</p>
+        <ion-checkbox slot="end" required></ion-checkbox>
+      </ion-item>
+      <ion-button class="signup-button" expand="block" [disabled]="password !== confirmPassword">Signup</ion-button>
+    </ion-list>
+  </div>
+</ion-content>

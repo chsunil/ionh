@@ -1,0 +1,59 @@
+.centerMarkerImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    height: 90px;
+  }
+  
+  .map-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+  }
+  
+  .location-list{
+    position: relative;
+  z-index: 1;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-top: -10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  
+  ion-icon{
+    color: brown;
+  }
+  ion-label{
+    font-family: 'Tilt Neon';
+  }
+  }
+  
+  
+  ion-searchbar{
+    position: relative;
+    z-index: 2;
+    --border-radius: 20px;
+    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Tilt Neon';
+  }
+  
+  .bottom-card {
+  
+    border-radius: 19px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 40%);
+    font-family: 'Tilt Neon';
+  }
+  
+  ion-footer{
+    position: absolute;
+    bottom: 0;
+  }

@@ -1,0 +1,120 @@
+ion-content {
+    --background: linear-gradient(to right, #ffe636, #b21f1f, #fdbb2d);
+}
+
+.main-div {
+    height: 40%;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    display: flex;
+    align-items: center;
+
+    .title-div {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: 'Oxygen';
+
+        ion-title {
+            font-size: 40px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        p {
+            color: #d9bdbd;
+        }
+    }
+}
+
+.main-card {
+    box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+    border-radius: 50px;
+    margin-top: -70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    ion-card-header {
+        ion-item {
+            ion-label {
+                h2 {
+                    font-family: 'Oxygen';
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-family: 'Oxygen';
+                }
+            }
+        }
+    }
+
+    ion-card-content {
+        .sub-para {
+            padding-left: 20px;
+        }
+    }
+
+    .footer-item {
+        border-top-style: solid;
+        border-top-color: #80808042;
+        --background: linear-gradient(to right, #7f00ff, #e100ff);
+
+        .label {
+            font-size: 16px;
+            margin-right: 10px;
+            color: #fff;
+            font-family: 'Oxygen';
+            text-align: center;
+        }
+
+    }
+}
+
+.other-card {
+    box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+    border-radius: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    ion-card-header {
+        ion-item {
+            ion-label {
+                h2 {
+                    font-family: 'Oxygen';
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-family: 'Oxygen';
+                }
+            }
+        }
+    }
+
+    ion-card-content {
+        .sub-para {
+            padding-left: 20px;
+        }
+    }
+
+    .footer-item {
+        border-top-style: solid;
+        border-top-color: #80808042;
+        --background: linear-gradient(to right, #7f00ff, #e100ff);
+
+        .label {
+            font-size: 16px;
+            margin-right: 10px;
+            color: #fff;
+            font-family: 'Oxygen';
+            text-align: center;
+        }
+
+    }
+}

@@ -1,0 +1,121 @@
+<ion-content>
+
+  <ion-item class="main-item">
+    <ion-label slot="start">
+      <h2>Hello!</h2>
+      <h1>Mr Ionic</h1>
+    </ion-label>
+    <ion-buttons>
+      <ion-button class="notification" slot="start">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge>2</ion-badge>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-avatar slot="end">
+      <img src="./../../assets/person.jpg">
+    </ion-avatar>
+  </ion-item>
+
+  <ion-searchbar></ion-searchbar>
+
+  <h1 class="title">Category</h1>
+
+
+  <ion-grid class="grid">
+    <ion-row>
+      <ion-col>
+        <ion-card class="card1">
+          <ion-card-content>
+            <ion-icon name="help-circle"></ion-icon>
+            <p>Questions</p>
+            <p> 5 Projects</p>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card2">
+          <ion-card-content>
+            <ion-icon name="book"></ion-icon>
+            <p>Notes</p>
+            <p> 4 Projects</p>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card3">
+          <ion-card-content>
+            <ion-icon name="card"></ion-icon>
+            <p>Cards</p>
+            <p> 2 Projects</p>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab>
+
+  <div class="task-div">
+    <h1>Daily Tasks</h1>
+
+    <ion-item class="task" button detail="true" detail-icon="caret-forward-outline">
+      <ion-thumbnail slot="start">
+        <img src="./../../../assets/pages/tube.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Biology</h2>
+        <p>10 remaining</p>
+      </ion-label>
+    </ion-item>
+    <ion-item class="task" button detail="true" detail-icon="caret-forward-outline">
+      <ion-thumbnail slot="start">
+        <img src="./../../../assets/pages/experiment.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Chemistry</h2>
+        <p>5 remaining</p>
+      </ion-label>
+    </ion-item>
+    <ion-item class="task" button detail="true" detail-icon="caret-forward-outline">
+      <ion-thumbnail slot="start">
+        <img src="./../../../assets/pages/science.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Physics</h2>
+        <p>1 remaining</p>
+      </ion-label>
+    </ion-item>
+    <ion-item class="task" button detail="true" detail-icon="caret-forward-outline">
+      <ion-thumbnail slot="start">
+        <img src="./../../../assets/pages/okay.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>English</h2>
+        <p>8 remaining</p>
+      </ion-label>
+    </ion-item>
+    <ion-item class="task" button detail="true" detail-icon="caret-forward-outline">
+      <ion-thumbnail slot="start">
+        <img src="./../../../assets/pages/maths.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Mathematics</h2>
+        <p>4 remaining</p>
+      </ion-label>
+    </ion-item>
+
+  </div>
+</ion-content>

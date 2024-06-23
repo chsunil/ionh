@@ -1,0 +1,84 @@
+ion-header{
+    ion-toolbar{
+        ion-title{
+            font-family: 'Oxygen';
+        }
+        .cart{
+            ion-icon{
+                font-size: 40px;
+            }
+            ion-badge{
+                position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    border-radius: 20px;
+            }
+        }
+    }
+}
+ion-slides {
+    ion-slide {
+        ion-card {
+            box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+            border-radius: 20px;
+            ion-label {
+                font-family: 'Oxygen';
+
+                h2 {
+                    font-weight: bold;
+                    color: black;
+                }
+
+
+            }
+            ion-item {
+                ion-label {
+                    font-family: 'Oxygen';
+
+                    h2 {
+                        font-weight: bold;
+                        color: black;
+                    }
+
+                    h3 {
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: #b70c0c;
+                    }
+                }
+
+                ion-button{
+                    --border-radius:30px;
+                }
+            }
+        }
+    }
+}
+
+.type{
+    font-family: 'Fira Sans';
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.line::before {
+    content: "";
+    width: 60%;
+    height: 5px;
+    background-color: rgb(235 68 90);
+    display: block;
+    
+  }
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #b70c0c;
+    .special-price {
+        //color: #868686;
+        padding-left: 5px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+}

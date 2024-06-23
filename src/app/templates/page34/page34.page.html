@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div slot="end" class="trending">
+      <ion-label>
+        Trending
+      </ion-label>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="img-grid">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="imgs-col">
+          <img *ngFor="let image of images; let i = index;" [src]="image" [class.selected]="selectedImage === i"
+            (click)="selectImage(i)" class="sub-img">
+        </ion-col>
+        <ion-col>
+          <img [src]="images[selectedImage]" class="main-img">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <h2>{{ productTitle }}</h2>
+
+  <ion-item>
+    <app-star-rating slot="start" [rating]="productRating" class="star-rating"></app-star-rating>
+    <ion-label class="sold" slot="end">{{sold}} Sold</ion-label>
+  </ion-item>
+
+  <ion-title>Description</ion-title>
+
+  <p>{{ productDescription }}</p>
+</ion-content>
+
+<ion-footer>
+  <ion-item lines="none">
+    <ion-label slot="start">Price | ${{ totalPrice }}</ion-label>
+    <ion-button slot="end" fill="clear">Add to Cart</ion-button>
+  </ion-item>
+</ion-footer>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-searchbar #searchBar class="searchbar" [(ngModel)]="searchTerm" (keyup.enter)="search()">
+
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!posts" class="big-div">
+    <ion-icon name="search" class="big-icon"></ion-icon>
+    <ion-label class="icon-label">Search Posts</ion-label>
+  </div>
+
+  <ion-grid>
+    <ion-row *ngFor="let item of posts" class="post" (click)="viewPost(item.id)">
+      <ion-col size="3" class="img-col">
+        <img src="{{item.jetpack_featured_media_url}}">
+      </ion-col>
+      <ion-col size="9">
+        <h2>{{item.title.rendered}}</h2>
+        <p [innerHTML]="sliceExcerpt(item.excerpt.rendered, 50)"></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-infinite-scroll threshold="100px" *ngIf="hasMoreItems" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Searching Posts...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,70 @@
+ion-toolbar {
+    --background: transparent !important;
+
+    ion-title {
+        font-family: 'Oxygen';
+        color: white;
+        background-color: #f48017;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 50%;
+
+    }
+
+    ion-button {
+        color: #fff;
+    }
+
+}
+
+ion-content {
+    --background: url(./../../../assets/images/rice.jpg)0 0/cover no-repeat;
+}
+
+.container {}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.blur {}
+
+ion-footer {
+
+    background-color: #000000a6;
+
+
+    h2 {
+        color: #fff;
+        font-family: 'Oxygen';
+        padding-left: 10px;
+    }
+
+    p {
+        color: #fff;
+        font-family: 'Oxygen';
+        margin: 10px
+    }
+
+    ion-grid {
+        ion-row {
+            ion-col {
+                ion-button {
+                    color: white;
+                    --border-color: white;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .buy-btn {
+        --background: linear-gradient(to right, #f12711, #f5af19);
+
+    }
+
+    .star-rating {
+        padding-left: 10px;
+    }
+}

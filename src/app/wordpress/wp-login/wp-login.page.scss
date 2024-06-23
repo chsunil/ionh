@@ -1,0 +1,95 @@
+ion-header{
+    --background:transparent !important;
+      ion-toolbar{
+        --background:transparent !important;
+        color:#fff;
+      }
+    }
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, #7b2cbf, #3c8dbc);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    background: url('./../../../assets/images/restLogo.png') no-repeat center center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.form {
+    ion-item {
+        margin-bottom: 20px;
+
+        ion-label {
+            color: #000;
+            font-family: 'Oxygen';
+        }
+
+        ion-input {
+            font-family: 'Oxygen';
+            border-radius: 5px;
+            padding: 10px;
+        }
+    }
+
+    ion-button {
+        margin-top: 20px;
+        font-family: 'Oxygen';
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+        --border-radius: 10px;
+    }
+}
+
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+
+    a {
+        color: #666;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Tilt Neon';
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.not-registered {
+    text-align: center;
+    margin-top: 30px;
+
+    a {
+        color: #666;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Tilt Neon';
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

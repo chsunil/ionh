@@ -1,0 +1,59 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button size="large"><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Music</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="large"><ion-icon name="share-social"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="main-div">
+    <ion-card class="img-card">
+      <img src="./../../assets/images/westlife.jpg">
+    </ion-card>
+
+    <h2 class="name">Beautiful in White</h2>
+    <p class="singer">Westlife</p>
+
+
+    <ion-buttons class="btn-set1">
+      <ion-button>
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="options"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="pencil"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-progress-bar value="0.4"></ion-progress-bar>
+
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid class="btn-set2">
+    <ion-row>
+      <ion-col>
+        <ion-button class="other" (click)="playBack()">
+          <ion-icon name="play-back"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="pause" (click)="pause()">
+          <ion-icon name="pause"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="other" (click)="playForward()">
+          <ion-icon name="play-forward"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

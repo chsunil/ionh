@@ -1,0 +1,83 @@
+ion-header {
+    --background: transparent !important;
+}
+
+ion-content {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.location-select {
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
+    ion-item {
+        ion-label {
+            font-family: 'Tilt Neon';
+            text-align: center;
+            width: 15%;
+        }
+
+        ion-input {
+            font-family: 'Tilt Neon';
+        }
+    }
+}
+
+.map-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.details {
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
+    ion-card-header {
+        font-family: 'Oxygen';
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+
+    .steps-btn {
+        --background: linear-gradient(to right, #7f00ff, #e100ff);
+
+        ion-label {
+            padding-left: 10px;
+        }
+    }
+
+    .foot-btn {
+        color: green;
+    }
+
+    .car-btn {
+        color: rgb(14, 74, 185);
+    }
+
+    .bus-btn {
+        color: orangered;
+    }
+
+    .sub-btns {
+        --border-radius: 10px;
+    }
+
+    .sub-btns.sos-btn {
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+    }
+}
+
+ion-menu {
+    ion-header {
+        ion-toolbar {
+            --background: linear-gradient(to right, #00b4db, #0083b0);
+            color: #fff;
+        }
+    }
+}

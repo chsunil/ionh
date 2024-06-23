@@ -1,0 +1,65 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-button size="large"><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button size="large"><ion-icon name="person"></ion-icon></ion-button>
+      <ion-button size="large"><ion-icon name="share-social"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="img-div">
+    <div class="profile">
+      <img  src="./../../assets/images/restLogo.png">
+      <h1>YuNova Restaurant</h1>
+      <p>No 03, Main Street, London, UK</p>
+    </div>
+  </div>
+
+  <div class="chip-bar">
+    <ion-chip>Overview</ion-chip>
+    <ion-chip>Reviews</ion-chip>
+    <ion-chip>Photos</ion-chip>
+    <ion-chip>Menu</ion-chip>
+  </div>
+
+  <ion-grid>
+    <ion-row >
+      <ion-col class="product" *ngFor="let product of products; let i = index;" size="6">
+        <div class="img-container" [ngStyle]="{'background-image':'url('+product.img+')'}">
+         <ion-item class="label">
+          <p slot="start">{{product.name}}</p>
+          <p class="price">${{product.price}}</p>
+         </ion-item>
+        </div>
+    
+      </ion-col>
+ 
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+
+
+    <ion-col>
+      <ion-button class="bottom-btn">
+          <ion-icon name="call"></ion-icon>
+          <ion-label>Call</ion-label>
+      </ion-button>
+    </ion-col>
+    <ion-col>
+    <ion-button class="bottom-btn">
+          <ion-icon name="navigate"></ion-icon>
+          <ion-label>Location</ion-label>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,0 +1,35 @@
+.main-div{
+    height: 30%;
+    background: linear-gradient(to right, #f7ff00, #00f4ff);
+    display: flex;
+  align-items: center; 
+  justify-content: center;
+
+  .lottie-div{
+    height: 75%;
+  }
+}
+
+.contacts{
+    text-align: center;
+    margin-top: 20px;
+    .line {
+        border: none;
+        border-top: 2px solid #176fd3;
+        width: 50%;
+        margin-left: 25px;
+      }
+    .segment{
+        margin-bottom: 40px;
+        font-family:'Oxygen';
+        ion-icon{
+            color:purple;
+            font-size:2.2rem;
+        }
+
+        h2{
+            font-weight:bold;
+            font-size: 20px;
+        }
+    }
+}

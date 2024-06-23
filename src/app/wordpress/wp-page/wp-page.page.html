@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="wp/account" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title" *ngIf="page">{{page.title.rendered}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="page" [innerHTML]="page.content.rendered" class="desc"></div>
+</ion-content>

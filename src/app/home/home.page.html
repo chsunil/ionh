@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>IonHammer by MrIonic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+  <ion-list-header>Integrations</ion-list-header>
+
+  <ion-item buton (click)="navigate('wp/home')">
+    <ion-label>WordPress</ion-label>
+  </ion-item>
+  <ion-item buton (click)="navigate('maps')">
+    <ion-label>Google Maps</ion-label>
+  </ion-item>
+  <ion-item buton (click)="navigate('animations')">
+    <ion-label>Animations</ion-label>
+  </ion-item>
+
+  <ion-list-header>UI Library</ion-list-header>
+
+  <ion-item buton (click)="navigate('templates')">
+    <ion-label>46 Templates</ion-label>
+  </ion-item>
+  <ion-item buton (click)="navigate('chartbank')">
+    <ion-label>Charts</ion-label>
+  </ion-item>
+  <ion-item buton (click)="navigate('loadings')">
+    <ion-label>Customized Loadings</ion-label>
+  </ion-item>
+  <ion-item buton (click)="navigate('alerts')">
+    <ion-label>Customized Alerts</ion-label>
+  </ion-item>
+  <ion-item buton (click)="viewActionSheet()">
+    <ion-label>Customized Action Sheet</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

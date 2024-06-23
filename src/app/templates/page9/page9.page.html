@@ -1,0 +1,109 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="main-title">
+      Biscope App
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon class="end-icon" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+      
+        <ion-tab-button tab="series">
+          <ion-label>Series</ion-label>
+        </ion-tab-button>
+        <ion-tab-button class="movie-tab" tab="movies">
+          <ion-label>Movies</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="trailers">
+          <ion-label>Trailers</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-title class="title">Popular Movies</ion-title>
+  <ion-card>
+    <ion-img src="./../../assets/movie1.jpg"></ion-img>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8">
+          <ion-card-title>Aliens & Earth</ion-card-title>
+          <ion-card-subtitle>Sci-Fi</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="4" class="ion-text-end">
+          <ion-chip>
+            <ion-label>440</ion-label>
+            <ion-icon name="heart"></ion-icon>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img src="./../../assets/movie2.jpg"></ion-img>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8">
+          <ion-card-title>Alice in the Wonderland</ion-card-title>
+          <ion-card-subtitle>Fantasy</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="4" class="ion-text-end">
+          <ion-chip>
+            <ion-label>1440</ion-label>
+            <ion-icon name="heart"></ion-icon>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img src="./../../assets/movie3.jpg"></ion-img>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8">
+          <ion-card-title>Cold Wolf</ion-card-title>
+          <ion-card-subtitle>Adventure</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="4" class="ion-text-end">
+          <ion-chip>
+            <ion-label>140</ion-label>
+            <ion-icon name="heart"></ion-icon>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img src="./../../assets/movie4.png"></ion-img>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8">
+          <ion-card-title>Autumn Island</ion-card-title>
+          <ion-card-subtitle>Thriller</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="4" class="ion-text-end">
+          <ion-chip>
+            <ion-label>340</ion-label>
+            <ion-icon name="heart"></ion-icon>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

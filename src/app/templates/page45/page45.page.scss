@@ -1,0 +1,115 @@
+ion-header{
+--background:transparent !important;
+  ion-toolbar{
+    --background:transparent !important;
+  }
+}
+.title{
+    font-family: 'Oxygen';
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-div{
+    height: 40%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.about{
+    .date{
+        font-family: 'Tilt Neon';
+        background: linear-gradient(to right, #1e130c, #9a8478);
+    }
+
+    .author{
+        font-family: 'Tilt Neon';
+        margin-left: 20px;
+        background: linear-gradient(to right, #1e130c, #9a8478);
+    }
+  
+}
+
+.desc{
+    font-family: 'Oxygen';
+    margin: 10px;
+    font-size: 20px;
+}
+
+.comment-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Tilt Neon';
+    font-weight: bold;
+}
+
+.comment {
+    margin: 10px;
+    padding-top: 5px;
+    ion-avatar {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .comment-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      flex: 1;
+  
+      .user-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        p.date {
+          margin: 0;
+          font-size: 0.6em;
+          color: #999;
+          font-family: 'Tilt Neon';
+        }
+        h2 {
+          margin: 0;
+          font-size: 1.2em;
+          font-weight: bold;
+          font-family: 'Tilt Neon';
+        }
+      }
+  
+      p {
+        margin: 0;
+        font-family: 'Oxygen';
+            font-size: 0.9rem;
+      }
+  
+      ion-button {
+        float: right;
+        margin-left: auto;
+        font-family: 'Tilt Neon';
+      }
+    }
+  }
+  
+
+ion-footer{
+    .toolbox{
+        color: #fffefa;
+    --background: linear-gradient(to right, #36d1dc, #5b86e5);
+      .comment-btn{
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+        ion-label{
+            padding-left: 10px;
+            font-family: 'Tilt Neon';
+        }
+      }
+    }
+}

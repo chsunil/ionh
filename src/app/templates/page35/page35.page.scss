@@ -1,0 +1,114 @@
+ion-header {
+    --background:transparent !important;
+    ion-toolbar {
+        --background:transparent !important;
+        color: #fff;
+        ion-title {
+            text-align: center;
+            font-family: 'Oxygen';
+        }
+    }
+}
+ion-content{
+    --background: linear-gradient(to right, #151d2c, #243b55);
+}
+
+.main-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #05a7bd, #96c93d);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    ion-card-content{
+        color:#fff;
+    .icon-col {
+        display: flex;
+        align-items: center;
+
+        ion-icon {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 50px;
+        }
+    }
+
+    p {
+        font-family: 'Oxygen';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Tilt Warp';
+        text-align: center;
+    }
+}
+}
+
+.title {
+    font-family: 'Oxygen';
+    font-weight: bold;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.shortcuts {
+    border-radius: 20px;
+    background-color: #ffffff1f;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    ion-card-content {
+        text-align: center;
+        font-family: 'Tilt Warp';
+
+        ion-icon {
+            font-size: 40px;
+        }
+    }
+}
+
+.tests {
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    ion-grid {
+        ion-row {
+            ion-col {
+                text-align: center;
+                font-family: 'Oxygen';
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #ed6363;
+                }
+
+                .unit {
+                    margin-top: -10px;
+                    font-weight: bold;
+                }
+
+                .measure {
+                    margin-top: -10px;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+ion-footer{
+    text-align: center;
+    ion-button{
+        width: 90%;
+        font-family: 'Oxygen';
+        --border-radius:40px;
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+    }
+}

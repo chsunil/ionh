@@ -1,0 +1,140 @@
+
+    ion-header {
+      ion-toolbar {
+         ion-avatar{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            border-style: solid;
+            border-color: #9feddc;
+         }
+        ion-title.title {
+          margin-left: 10px;
+ 
+        }
+
+        ion-label{
+            h2{
+                font-family: 'Oxygen';
+        font-size: 20px;
+        color:#fff;
+              }
+    
+              p{
+                font-family: 'Oxygen';
+                color:#fff;
+              }
+        }
+        ion-badge {
+            margin-left: -11px;
+            margin-top: -12px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #e1581d;
+        }
+      }
+    }
+    .icons-row {
+        text-align: center;
+        font-family: 'Tilt Neon';
+        margin-bottom: 20px;
+        margin-top: 20px;
+      ion-button {
+    
+      }
+
+      ion-label{
+        color: gray;
+      }
+
+      ion-icon{
+        font-size: 30px;
+      }
+    }
+    .title-item {
+
+      ion-label {
+        h2 {
+          margin: 0;
+          font-size: 20px;
+          font-family: 'Oxygen';
+          font-weight: bold;
+          color: #0a9790;
+        }
+      }
+      ion-button {
+        ion-icon {
+          font-size: 24px;
+        }
+      }
+    }
+
+
+    .post-card {
+      margin-top: 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+      ion-item {
+        border-bottom-style: solid;
+        border-bottom-color: #80808042;
+        ion-avatar {
+          --border-radius: 50%;
+          img {
+            width: 48px;
+            height: 48px;
+          }
+        }
+        ion-label {
+          h2 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Oxygen';
+            font-weight: bold;
+          }
+          p{
+            font-family: 'Oxygen';
+          }
+        }
+        ion-button {
+          ion-icon {
+            font-size: 24px;
+            color: #cf1d4f;
+          }
+        }
+      }
+      ion-card-content {
+        font-family: 'Tilt Neon';
+        h2 {
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 16px;
+              text-align: justify;
+        }
+      }
+      ion-item:last-child {
+        border-top-style: solid;
+        border-top-color: #80808042;
+        ion-icon {
+          font-size: 24px;
+          color: #cf1d4f;
+        }
+        ion-label {
+          font-size: 16px;
+          margin-right: 10px;
+          color: #cf1d4f;
+          font-family: 'Oxygen';
+        }
+        p {
+          margin: 0;
+          font-size: 16px;
+          font-family: 'Oxygen';
+        }
+      }
+    }
+  
+  

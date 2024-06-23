@@ -1,0 +1,26 @@
+<ion-header translucent="true" class="ion-no-border">
+
+</ion-header>
+
+<ion-content fullscreen>
+  <img class="centerMarkerImg" src="assets/location.png">
+  <div class="map-div" #gmap></div>
+  <ion-searchbar #sbar [(ngModel)]="autocomplete" (ionChange)="updateSearchResults()" placeholder="Search Locations"
+    (ionClear)="clearAutoComplete()"></ion-searchbar>
+  <ion-list *ngIf="searched" class="location-list">
+    <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label> {{item.description}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <!-- Floating ion fab button -->
+  <ion-fab slot="fixed" vertical="center" horizontal="end">
+    <ion-fab-button size="small" color="warning" (click)="getUserLocation()">
+      <ion-icon name="locate"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<ion-footer>
+  <ion-button class="select-btn" (click)="selectLocation()">Select Location</ion-button>
+</ion-footer>

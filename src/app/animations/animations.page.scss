@@ -1,0 +1,33 @@
+h1 {
+    font-family: 'Oxygen';
+    text-align: center;
+}
+
+.anim1 {
+    font-family: 'Oxygen';
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.anim2 {
+    font-family: 'Oxygen';
+    animation-name: flipInY;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+
+.anim3 {
+    font-family: 'Oxygen';
+    animation-name: backInUp;
+    animation-duration: 3s;
+}
+
+.main-div {
+    background-color: #fff;
+    border-radius: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+}

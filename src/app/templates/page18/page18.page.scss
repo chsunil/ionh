@@ -1,0 +1,136 @@
+ion-toolbar {
+    --background: transparent !important;
+
+    ion-title {
+        font-family: 'Oxygen';
+
+    }
+
+}
+
+ion-content {
+    --margin-top: none;
+    --padding-top: none;
+    //--background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.above-div {
+    background: linear-gradient(to right, #f46b45, #eea849);
+    padding-top: 50px;
+    border-bottom-right-radius: 100%;
+    height: 20%;
+
+    h1 {
+        font-family: 'Oxygen';
+        margin: 10px;
+        font-size: 25px;
+        color: #fff;
+    }
+
+}
+
+
+ion-searchbar {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    --border-radius: 20px;
+    --background: #80808029;
+}
+
+ion-header {
+    --background: transparent;
+    --border-width: 0;
+
+}
+
+ion-item {
+    --border-color: #d3d3d3;
+
+    ion-thumbnail {
+        --border-radius: 50%;
+    }
+
+    ion-label {
+        font-family: 'Oxygen';
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #865d5d;
+        }
+    }
+}
+
+ion-slides {
+    --height: 200px;
+
+    ion-slide {
+        --border-radius: 8px;
+        --background: #fff;
+        --box-shadow: none;
+
+        ion-card {
+            border-radius: 20px;
+            background-color: #f1e7dba1;
+
+            img {
+                border-radius: 10px;
+                height: 100px;
+            }
+
+            ion-label {
+                font-family: 'Oxygen';
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
+                    font-size: 1.01rem;
+                    color: brown;
+                    font-weight: bold;
+
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    margin-top: 0;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        border: 2px solid var(--slide-border-color);
+    }
+
+    .swiper-slide-next {
+        border: 2px solid var(--slide-border-color);
+        margin-right: 15px;
+    }
+
+    .swiper-slide-prev {
+        border: 2px solid var(--slide-border-color);
+        margin-left: 15px;
+    }
+}
+
+.bottom-tabs {
+    --background: linear-gradient(to right, #f46b45, #eea849);
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+
+    ion-tab-button {
+        color: rgb(255, 255, 255);
+    }
+}

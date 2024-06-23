@@ -1,0 +1,80 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon name="search"></ion-icon></ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-slides loop="true" [options]="slideOpts">
+    <ion-slide *ngFor="let image of featured">
+      <img class="slide-img" src="{{image.image_src}}">
+      <div class="caption">
+        <h2>{{image.title}}</h2>
+        <p>{{image.desc}}</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <!-- To change the segment contents you should Import FormsModule into app module-->
+  <ion-segment [(ngModel)]="segmentValue" value="recent" [scrollable]="true" [swipe-gesture]="true"
+    (ionChange)="segmentChanged()">
+    <ion-segment-button value="recent">
+      <ion-label>Recent</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="popular">
+      <ion-label>Popular</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="featured">
+      <ion-label>Featured</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="segmentValue === 'recent'">
+    <ion-grid>
+      <ion-row *ngFor="let item of posts" class="post">
+        <ion-col size="3" class="img-col">
+          <img src="{{item.image_src}}">
+        </ion-col>
+        <ion-col size="9">
+          <h2>{{item.title}}</h2>
+          <p>{{item.desc}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="segmentValue === 'popular'">
+    <ion-grid>
+      <ion-row *ngFor="let item of popular" class="post">
+        <ion-col size="3" class="img-col">
+          <img src="{{item.image_src}}">
+        </ion-col>
+        <ion-col size="9">
+          <h2>{{item.title}}</h2>
+          <p>{{item.desc}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="segmentValue === 'featured'">
+    <ion-grid>
+      <ion-row *ngFor="let item of posts" class="post">
+        <ion-col size="3" class="img-col">
+          <img src="{{item.image_src}}">
+        </ion-col>
+        <ion-col size="9">
+          <h2>{{item.title}}</h2>
+          <p>{{item.desc}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

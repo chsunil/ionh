@@ -1,0 +1,38 @@
+ion-content {
+    --background:linear-gradient(to right, #41295a, #2f0743);
+}
+
+.main-div{
+    background-color: #fff;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+}
+
+.grid{
+    text-align: center;
+    h1{
+        color: #fff;
+        font-family: 'Tilt Warp';
+        padding-top:30%;
+    }
+
+    p{
+        color: #fff;
+        font-family: 'Tilt Neon';
+   
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    ion-label{
+        font-family: 'Tilt Neon';
+    }
+
+    ion-button{
+        box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+    }
+}

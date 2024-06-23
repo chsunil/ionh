@@ -1,0 +1,90 @@
+ion-select {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Oxygen';
+    color: #fff;
+    background-color: #edf4f729;
+}
+
+ion-content {
+    --background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+ion-toolbar {
+    --background: transparent !important;
+    color: #fff;
+
+    ion-title {
+        font-family: 'Oxygen';
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.main-div {
+    margin-top: 50px;
+}
+
+.atts {
+    width: 50%;
+    margin-left: 30px;
+    margin-right: auto;
+    --background: transparent !important;
+
+    ion-label {
+        font-family: 'Oxygen';
+        color: #fff;
+        padding-left: 10px;
+    }
+
+}
+
+.att-list {
+    background: transparent !important;
+
+}
+
+.range {
+    --background: transparent;
+
+    ion-range {
+        margin-bottom: 20px;
+        color: #fff;
+        height: 100px;
+        --bar-background: #ffffff;
+        --bar-background-active: #ff9813;
+        --bar-height: 8px;
+        --bar-border-radius: 8px;
+        --knob-background: #ff9813;
+        --knob-size: 32px;
+        --pin-background: #ffffff;
+        --pin-color: #000;
+    }
+}
+
+
+ion-list-header {
+
+    ion-label {
+        font-family: 'Oxygen';
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 20px;
+        color: #fff;
+    }
+
+}
+
+ion-footer {
+    text-align: center;
+    ion-button {
+            width: 60%;
+    --border-radius: 55px;
+        ion-label {
+            font-family: 'Oxygen';
+        }
+    }
+}

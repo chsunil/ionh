@@ -1,0 +1,67 @@
+ion-card {
+    height: 30%;
+    border-radius: 30px;
+    font-family: 'Oxygen';
+    ion-img {
+        height: 100%; /* set the height of the image to 100% of the card's height */
+        object-fit: cover; /* make the image cover the whole area of the card */
+      }
+  
+    ion-card-header {
+      ion-card-title {
+        font-weight: bold;
+      }
+    }
+  
+    ion-card-content {
+        margin-top: -80px;
+        background-color: #02020280;
+      ion-row {
+        ion-col:first-of-type {
+          ion-card-title {
+            font-size: 1.2rem;
+               color: rgb(255, 255, 255);
+          }
+  
+          ion-card-subtitle {
+            font-size: 0.9rem;
+            color: rgb(255, 255, 255);
+          }
+        }
+  
+        ion-col:last-of-type {
+          ion-chip {
+            ion-label{
+                color: rgb(255, 255, 255);
+            }
+            ion-icon {
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .title{
+    margin-top: 10px;
+    font-family: 'Tilt Neon';
+  }
+
+   .main-title{
+    font-family: 'Tilt Neon';
+    text-align: center;
+   }
+
+   ion-tab-bar{
+    
+    font-family: 'Oxygen';
+    .movie-tab{
+        border-bottom-style: solid;
+        color: green;
+       }
+   }
+  
+   .end-icon{
+    color: green;
+   }

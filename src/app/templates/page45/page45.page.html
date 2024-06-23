@@ -1,0 +1,67 @@
+<ion-header translucent="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button ><ion-icon name="menu"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+<h1 *ngIf="post" class="title">{{post.title}}</h1>
+<ion-item *ngIf="post" class="about">
+  <ion-badge class="date">{{post.date}}</ion-badge>
+  <ion-badge class="author">{{post.author}}</ion-badge>
+</ion-item>
+
+<div *ngIf="post" class="img-div" [ngStyle]="{'background-image':'url('+post.img+')'}">
+ 
+</div>
+
+<div *ngIf="post" [innerHTML]="post.description" class="desc"></div>
+
+
+<div *ngIf="comments" id="comment-section">
+
+
+<ion-title class="comment-title">Comments({{comments.length}})</ion-title>
+
+<ion-item class="comment" *ngFor="let item of comments">
+  <ion-avatar slot="start">
+    <img [src]="item.avatar">
+  </ion-avatar>
+  <div class="comment-content">
+    <div class="user-info">
+      <h2>{{item.author}}</h2>
+      <p class="date">Posted on {{item.date}}</p>
+
+    </div>
+    <p>{{item.content}}</p>
+    <ion-button fill="clear">Reply</ion-button>
+  </div>
+</ion-item>
+</div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item class="toolbox">
+    <ion-button slot="start" class="comment-btn" >
+      <ion-icon name="chatbox"></ion-icon>
+      <ion-label>Write Comment</ion-label>
+    </ion-button>
+    <ion-buttons slot="end">
+         <ion-button size="large">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+      <ion-button size="large">
+        <ion-icon name="share-social"></ion-icon>
+      </ion-button>
+      <ion-button size="large" (click)="scrollToComments()">
+        <ion-icon name="chatbubbles"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+</ion-footer>

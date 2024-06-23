@@ -1,0 +1,109 @@
+ion-toolbar{
+    --background:transparent !important;
+
+    ion-title{
+        text-align: center;
+        font-family: 'Oxygen';
+        color: #fff;
+    }
+
+    ion-icon{
+        color: #fff;
+    }
+}
+
+ion-header {
+    --background: transparent;
+    --border-width: 0;
+
+  }
+
+ion-content{
+    --margin-top:none;
+    --padding-top:none;
+    --background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.main-div{
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top:25%;
+}
+
+.icons-grid{
+    font-family: 'Oxygen';
+    text-align: center;
+    padding-top: 40px;
+
+    ion-icon{
+        font-size: 40px;
+    }
+    h2{
+      font-weight: bold;
+      margin-top: 0px;
+    font-size: 18px;
+    }
+    p{
+        color: gray;
+        
+    font-size: 11px;
+    margin-top: -5px;
+
+    }
+}
+
+.title{
+    padding-left: 10px;
+    ion-label{
+        font-family: 'Oxygen';
+        font-weight: bold;
+    }
+}
+
+ion-slides {
+    --height: 200px;
+    ion-slide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ion-card{
+        background-color: rgb(85 76 124 / 14%);
+        width: 50%;
+        border-radius: 20px;
+        ion-icon{
+            color: rgb(10, 10, 59);
+            font-size: 20px;
+        }
+        ion-item{
+            --background: transparent;
+           ion-label{
+            font-family: 'Oxygen';
+            h2{
+                font-weight: bold;
+            }
+           }
+        }
+    }
+    }
+
+  }
+
+.recent-grid{
+    margin: 10px;
+   ion-row{
+    ion-col{
+        text-align: center;
+        img{
+            border-radius: 20px;
+            height: 120px;
+            box-shadow: 0 2px 10px rgb(0 0 0 / 40%);
+        }
+        ion-label{
+            font-family: 'Oxygen';
+        }
+    }
+   }
+  
+
+}

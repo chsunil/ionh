@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="forgot-password-container">
+    <div class="lock-icon-container">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+    </div>
+    <div class="forgot-password-label-container">
+      <h2>Forgot Password?</h2>
+    </div>
+    <div class="forgot-password-form-container">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="mail"></ion-input>
+      </ion-item>
+      <div class="submit-button-container">
+        <ion-button expand="block" (click)="submit()">Submit</ion-button>
+      
+      </div>
+
+    </div>
+ 
+  </div>
+  <div class="forgot-password-message-container">
+    <p *ngIf="success">Please check your mail!</p>
+  </div>
+</ion-content>

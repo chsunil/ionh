@@ -1,0 +1,54 @@
+<ion-header  translucent="true">
+  <ion-toolbar>
+  <ion-title>Account</ion-title>
+  <ion-item *ngIf="user && loggedUser" slot="end">
+    <ion-avatar slot="end"><img [src]="user.avatar_urls[48]"></ion-avatar>
+    <ion-label>{{user.name}}</ion-label>
+  </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+
+	<ion-list class="line-input" no-margin >
+
+
+    <ion-item (click)="viewPage(data.settings.about_page)">
+      <ion-icon slot="start" name="alert"></ion-icon>
+        <ion-label>About Us</ion-label>
+    </ion-item>
+    <ion-item (click)="viewPage(data.settings.contact_page)">
+      <ion-icon slot="start" name="call"></ion-icon>
+        <ion-label>Contact Us</ion-label>
+    </ion-item>
+    <ion-item (click)="viewPage(data.settings.privacy_page)">
+      <ion-icon slot="start" name="finger-print"></ion-icon>
+        <ion-label>Privacy Policy</ion-label>
+    </ion-item>
+    <ion-item *ngIf="!loggedUser" (click)="navigate('wp/signup')">
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>Sign Up</ion-label>
+  </ion-item>
+    <ion-item *ngIf="!loggedUser" (click)="navigate('wp/login')">
+      <ion-icon slot="start" name="log-in"></ion-icon>
+        <ion-label>Login</ion-label>
+    </ion-item>
+    <ion-item *ngIf="loggedUser" (click)="logout()">
+      <ion-icon slot="start" name="log-out"></ion-icon>
+      <ion-label>Logout</ion-label>
+  </ion-item>
+</ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-button fill="clear" slot="start">
+      <ion-icon name="log-out"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-button>
+    <ion-label slot="end">
+      Version 1.62
+    </ion-label> </ion-item>
+</ion-footer>

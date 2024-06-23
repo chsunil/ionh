@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>Saved Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!posts.length" class="big-div">
+    <ion-icon name="bookmark-outline" class="big-icon"></ion-icon>
+    <ion-label class="icon-label">Your Saved Posts Appear Here</ion-label>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-card *ngFor="let post of posts" >
+      
+          <ion-card-header (click)="viewPost(post.id)">
+            <ion-card-title>{{ post.title.rendered }}</ion-card-title>
+            <ion-card-subtitle>{{ post.date.slice(0, 10) }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="desc" [innerHTML]="sliceExcerpt(post.excerpt.rendered, 50)"></div>
+          </ion-card-content>
+          <ion-item>
+            <ion-chip class="remove-chip" slot="end"><ion-icon name="trash-bin" (click)="removePost(post.id)"></ion-icon>
+            <ion-label>Remove</ion-label></ion-chip>
+            <ion-chip (click)="viewPost(post.id)" class="view-chip" slot="end">
+              <ion-icon name="eye"></ion-icon><ion-label>View</ion-label></ion-chip>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    
+    </ion-row>
+  </ion-grid>
+</ion-content>

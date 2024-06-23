@@ -1,0 +1,106 @@
+ion-content{
+    //--background: url(./../../assets/lottie/10201-background-full-screen-night.gif) center/cover;
+  
+}
+
+ion-toolbar{
+    --background: linear-gradient(to right, #7f00ff, #e100ff)
+    
+}
+
+
+
+ion-icon{
+    color: #fff;
+}
+
+ion-title{
+    text-align: center;
+    font-family: 'Tilt Neon';
+    color: #fff;
+}
+.description{
+    text-align: center;
+    font-family: 'Oxygen';
+    margin: 31px;
+    animation-name: fadeIn;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+}
+.main{
+    ion-item{
+        --background: transparent !important;
+
+        ion-icon{
+            font-size: 30px;
+            color: #fff;
+        }
+        ion-label{
+            font-family: 'Tilt Neon';
+            h2{
+                color: #fff;
+                font-size: 22px;
+            }
+            p{
+                color: #fff;
+            }
+        }
+    }
+   
+    ion-row{
+        text-align:center;
+        font-family: 'Merriweather';
+        color:#fff;
+    }
+
+    .card1{
+        border-radius: 30px;
+        margin: 15px;
+       // box-shadow: 0 2px 30px rgb(0 0 0 / 40%);
+        background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+        animation-name: fadeIn;
+        animation-delay: 1.5s;
+        animation-duration: 2s;
+    }
+
+    .card2{
+        border-radius: 30px;
+        margin: 15px;
+        //box-shadow: 0 2px 30px rgb(0 0 0 / 40%);
+        background: linear-gradient(to right, #fc4a1a, #f7b733);
+        animation-name: fadeIn;
+        animation-delay: 1.5s;
+        animation-duration: 2s;
+    }
+
+    .card3{
+        border-radius: 30px;
+        margin: 15px;
+        //box-shadow: 0 2px 30px rgb(0 0 0 / 40%);
+        background: linear-gradient(to right, #ed213a, #93291e);
+        animation-name: fadeIn;
+        animation-delay: 1.5s;
+        animation-duration: 2s;
+    }
+
+    .card4{
+        border-radius: 30px;
+        margin: 15px;
+        //box-shadow: 0 2px 30px rgb(0 0 0 / 40%);
+        background: linear-gradient(to right, #7f00ff, #e100ff); 
+        animation-name: fadeIn;
+        animation-delay: 1.5s;
+        animation-duration: 2s;
+    }
+
+    .card5{
+        border-radius: 30px;
+        margin: 15px;
+        //box-shadow: 0 2px 30px rgb(0 0 0 / 40%);
+        background: linear-gradient(to right, #56ab2f, #a8e063); 
+        animation-name: fadeIn;
+        animation-delay: 1.5s;
+        animation-duration: 2s;
+    }
+
+}

@@ -1,0 +1,60 @@
+ion-header {
+    --background: transparent;
+}
+
+ion-toolbar {
+    --background: transparent;
+    color: #fff;
+}
+
+ion-content {
+    --padding-top: none;
+}
+
+ion-slides {
+    .slide-img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 18px;
+
+        h2 {
+            font-family: 'Oxygen';
+            text-align: left;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Oxygen';
+            text-align: left;
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.post {
+    .img-col {
+        display: flex;
+        align-items: center;
+
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: 'Tilt Warp';
+    }
+
+    p {
+        margin-top: 0px;
+        font-family: 'Tilt Neon';
+    }
+}

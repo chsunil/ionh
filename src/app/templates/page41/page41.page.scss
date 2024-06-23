@@ -1,0 +1,86 @@
+ion-header{
+    ion-toolbar{
+        color: #fff;
+    --background: transparent;
+    }
+}
+
+ion-content{
+    --padding-top: none;
+}
+.img-div{
+    background: url('./../../../assets/images/rest2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30%;
+    position: relative;
+    .profile{
+        position: absolute;
+        bottom: 0;
+        background-color: #00000054;
+        img{
+            width: 20%;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: -20px;
+        }
+
+        h1{
+            font-family: 'Oxygen';
+            color: #fff;
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 10px;
+            color: #fff;
+            font-family: 'Tilt Neon';
+            margin-top: -10px;
+            font-size: 12px;
+        }
+    }
+}
+
+.chip-bar{
+    text-align: center;
+    font-family: 'Tilt Neon';
+        margin-top: 20px;
+    margin-bottom: 10px;
+    ion-chip{
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.product{
+    .img-container{
+        height: 120px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    .label{
+        position: absolute;
+        bottom: 0;
+        --background: #ffffffa3;
+        color: #000;
+        width: 100%;
+        font-family: 'Oxygen';
+        .price{
+            font-weight: bold;
+        }
+    }
+    }
+}
+
+ion-footer{
+    .bottom-btn{
+        --border-radius: 30px;
+        --background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        width: 100%;
+        --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        ion-label{
+            padding-left: 5px;
+        }
+    }
+}

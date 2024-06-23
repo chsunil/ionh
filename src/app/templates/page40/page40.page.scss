@@ -1,0 +1,120 @@
+ion-header{
+    ion-toolbar{
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+        color: #fff;
+        ion-title{
+            font-family: 'Tilt Neon';
+        }
+    }
+}
+
+
+.product {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 10px;
+
+    .img-col {
+        .img-container {
+            height: 120px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 15px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .label-col {
+        font-family: 'Oxygen';
+
+        p {
+            font-size: 30px;
+            margin-bottom: 0px;
+           
+        }
+
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    .tool-col {
+        max-width: 20%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            font-family: 'Tilt Neon';
+            font-size: 25px;
+            color: red;
+        }
+
+        ion-button {
+            margin-left: auto;
+            margin-right: auto;
+            height: 25px;
+            width: 35px;
+            font-size: 10px;
+            --background: linear-gradient(to right, #ff416c, #ff4b2b);
+        }
+    }
+}
+
+ion-footer {
+    .btn-card {
+        height: 85%;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .card-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ion-icon {
+                font-size: 30px;
+            }
+
+            ion-label {
+                font-family: 'Oxygen';
+            }
+        }
+    }
+
+    .btn-card.selected {
+        border-style: solid;
+        border-color: #00000075;
+    }
+
+    ion-button {
+        width: 100%;
+        font-family: 'Tilt Neon';
+        --border-radius: 30px;
+        --background: linear-gradient(to right, #ff416c, #ff4b2b);
+        --box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .total {
+        font-family: 'Oxygen';
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
