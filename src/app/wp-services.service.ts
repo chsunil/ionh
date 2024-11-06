@@ -108,5 +108,8 @@ export class WpServicesService {
     return this.http.post(this.siteUrl + '/wp-json/jwt-auth/v1/token/validate?token=' + token,
       {}, httpOptions)
   }
-
+  // New method to fetch the logo URL 
+  getLogoURL() {
+    return this.http.get(this.siteUrl + '/wp-json/wp/v2/media?post_mime_type=image');
+  }
 }

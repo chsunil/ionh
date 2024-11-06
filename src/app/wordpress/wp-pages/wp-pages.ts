@@ -27,8 +27,6 @@ export class WpPages implements OnInit {
   ngOnInit() {
     this.setWpSettings();
     this.getPosts();
-    this.getCategories();
-    this.getFeatured();
   }
 
   setWpSettings() {
@@ -65,20 +63,6 @@ export class WpPages implements OnInit {
     return slicedExcerpt;
   }
 
-  getCategories() {
-    this.wp.getCategories().subscribe(data => {
-      this.categories = data;
-      console.log(data)
-    })
-  }
-
-  getFeatured() {
-    this.wp.getFeaturedPosts().subscribe(data => {
-      this.featured = data;
-      console.log(this.featured)
-    })
-  }
-
   viewPage(id: any) {
     this.router.navigate(['wp/page', id]);
   }
@@ -94,7 +78,7 @@ export class WpPages implements OnInit {
   async loadData(ev: Event) {
     this.page = this.page + 1;
     try {
-      const data = await firstValueFrom(this.wp.getPosts(this.page));
+      const data = await firstValueFrom(this.wp.getPages(this.page));
       console.log(data);
       this.tempPosts = data;
       this.posts.push.apply(this.posts, this.tempPosts);
@@ -105,9 +89,6 @@ export class WpPages implements OnInit {
       this.hasMoreItems = false;
     }
   }
-
-
-
 }
 
 

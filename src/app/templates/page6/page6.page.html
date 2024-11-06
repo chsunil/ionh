@@ -1,78 +1,80 @@
+<ion-content>
+  <div class="main-div">
+    <ion-item lines="none">
+      <ion-button slot="start" fill="clear" size="large">
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+      <ion-button class="notifications" slot="end" fill="clear" size="large">
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-item>
 
-  <ion-content>
-    <div class="main-div">
-     <ion-item lines="none">
-       <ion-button slot="start" fill="clear" size="large">
-         <ion-icon name="menu"></ion-icon>
-       </ion-button>
-       <ion-button class="notifications" slot="end" fill="clear" size="large">
-         <ion-icon name="notifications"></ion-icon>
-       </ion-button>
-     </ion-item>
- 
-     <ion-title>Power Usage</ion-title>
-     <ion-card class="main" >
-       <ion-row class="top-row">
-         <ion-col class="first-col">
-           <p>Energy Usage</p>
-           <h2>7.5 kWh</h2>
-         </ion-col>
-         <ion-col>
-           <p>Cost</p>
-           <h2>$12.5</h2>
-         </ion-col>
-       </ion-row>
-       <ion-row class="bottom-row">
-         <div #saChart style="width: 300px; height: 200px;"></div>
-       </ion-row>
-     </ion-card>
-    </div>
- 
-    <ion-grid>
-     <ion-row>
-       <ion-col>
-         <ion-card class="room-cards">
-           <ion-card-content>
-             <h2>Bed Room</h2>
-             <ion-icon src="./../../../assets/googleIcons/bed.svg"></ion-icon>
-             <h1>6</h1>
-             <p>Lights</p>
-           </ion-card-content>
-         </ion-card>
-       </ion-col>
-       <ion-col>
-         <ion-card class="room-cards">
-           <ion-card-content>
-             <h2>living Room</h2>
-             <ion-icon src="./../../../assets/googleIcons/chair.svg"></ion-icon>
-             <h1>8</h1>
-             <p>Lights</p>
-           </ion-card-content>
-         </ion-card>
-       </ion-col>
-     </ion-row>
-     <ion-row>
-       <ion-col>
-         <ion-card class="room-cards">
-           <ion-card-content>
-             <h2>Dining</h2>
-             <ion-icon src="./../../../assets/googleIcons/coffee.svg"></ion-icon>
-             <h1>4</h1>
-             <p>Lights</p>
-           </ion-card-content>
-         </ion-card>
-       </ion-col>
-       <ion-col>
-         <ion-card class="room-cards">
-           <ion-card-content>
-             <h2>Kitchen</h2>
-             <ion-icon src="./../../../assets/googleIcons/blender.svg"></ion-icon>
-             <h1>2</h1>
-             <p>Lights</p>
-           </ion-card-content>
-         </ion-card>
-       </ion-col>
-     </ion-row>
-    </ion-grid>
-   </ion-content>
-   
+    <ion-title>Power Usage</ion-title>
+    <ion-card class="main">
+      <ion-row class="top-row">
+        <ion-col class="first-col">
+          <p>Energy Usage</p>
+          <h2>7.5 kWh</h2>
+        </ion-col>
+        <ion-col>
+          <p>Cost</p>
+          <h2>$12.5</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bottom-row">
+        <div #saChart style="width: 300px; height: 200px;"></div>
+      </ion-row>
+    </ion-card>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="room-cards">
+          <ion-card-content>
+            <h2>Bed Room</h2>
+            <ion-icon src="./../../../assets/googleIcons/bed.svg"></ion-icon>
+            <h1>6</h1>
+            <p>Lights</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="room-cards">
+          <ion-card-content>
+            <h2>living Room</h2>
+            <ion-icon src="./../../../assets/googleIcons/chair.svg"></ion-icon>
+            <h1>8</h1>
+            <p>Lights</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="room-cards">
+          <ion-card-content>
+            <h2>Dining</h2>
+            <ion-icon src="./../../../assets/googleIcons/coffee.svg"></ion-icon>
+            <h1>4</h1>
+            <p>Lights</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="room-cards">
+          <ion-card-content>
+            <h2>Kitchen</h2>
+            <ion-icon src="./../../../assets/googleIcons/blender.svg"></ion-icon>
+            <h1>2</h1>
+            <p>Lights</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

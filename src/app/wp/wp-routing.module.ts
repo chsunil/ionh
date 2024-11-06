@@ -13,6 +13,7 @@ import { CategorySearchPage } from './../wordpress/category-search/category-sear
 import { AccountPage } from '../wordpress/account/account.page';
 import { WpPagePage } from '../wordpress/wp-page/wp-page.page';
 import { WpPages } from '../wordpress/wp-pages/wp-pages';
+import { HomePage } from '../home/home.page';
 
 const routes: Routes = [
   {
@@ -71,6 +72,11 @@ const routes: Routes = [
       {
         path: 'account',
         component: AccountPage,
+
+      },
+      {
+        path: 'back',
+        component: HomePage,
 
       },
     ]

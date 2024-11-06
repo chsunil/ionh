@@ -37,7 +37,7 @@ export class WpPage implements OnInit {
     if (this.data.settings == null) {
       // console.log('no data Sunil');
       this.wp.getStoredSettings().then(res => {
-        console.log(res, 'getStoredSettings');
+        // console.log(res, 'getStoredSettings');
         this.data.settings = res;
       })
     }
